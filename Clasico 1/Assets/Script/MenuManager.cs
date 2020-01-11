@@ -84,13 +84,13 @@ public class MenuManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) RegresarMenu();
 
-        if (Input.GetMouseButtonDown(1))
+       /* if (Input.GetMouseButtonDown(1))
         {
             cargando = true;
             //Carga();
 
             StartCoroutine("GenerarNivel");
-        }
+        }*/
 
 
     }
