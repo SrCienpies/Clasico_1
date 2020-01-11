@@ -49,15 +49,16 @@ public class MenuManager : MonoBehaviour
     #endregion
 
     public Image pantalla_carga;
-    public Texture2D mapa;
 
+    private Texture2D mapa;
     private bool cargando;
     private int total_pixel;
 
     [Header("Level Manager")]
     private ColorPrefab[] colorMappings;
     private List<int> cantidad_pixels = new List<int>();
-    private Transform contenedores_bloques;
+
+    [HideInInspector]public Transform contenedores_bloques;
 
     // 1 = Bloque normal
     // 2 = Bloque normal debajo
@@ -559,7 +560,7 @@ public class MenuManager : MonoBehaviour
 
                 contenedores_bloques.gameObject.SetActive(false);
 
-                estado = "Menu Niveles";
+                estado = "Menu Nivel";
 
                 FadeIn();
                 break;

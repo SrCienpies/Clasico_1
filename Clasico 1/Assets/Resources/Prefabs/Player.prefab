@@ -68,7 +68,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 43836e170c69bcd4493fec2ece80be43, type: 3}
+  m_Sprite: {fileID: 21300152, guid: 43836e170c69bcd4493fec2ece80be43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -255,6 +255,7 @@ MonoBehaviour:
   sueloCapa:
     serializedVersion: 2
     m_Bits: 256
+  rbd2: {fileID: 0}
   velocidadHorizontal: 350
 --- !u!1 &6358861517708574540
 GameObject:

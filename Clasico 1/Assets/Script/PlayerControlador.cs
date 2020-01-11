@@ -121,6 +121,7 @@ public class PlayerControlador : MonoBehaviour
                 else
                 {
                     GameOver();
+                    return;
                 }
             }
 
@@ -159,6 +160,14 @@ public class PlayerControlador : MonoBehaviour
     {
         MenuManager.instance.Cambio_Menu("Menu Juego");
         estado = "EnJuego";
+
+        // MenuManager.instance.contenedores_bloques.GetChild(3).
+
+        for (int i = 0; i < MenuManager.instance.contenedores_bloques.GetChild(3).childCount; i++)
+        {
+            MenuManager.instance.contenedores_bloques.GetChild(3).GetChild(i).gameObject.SetActive(true);
+        }
+
 
         SetPlayer();
        
