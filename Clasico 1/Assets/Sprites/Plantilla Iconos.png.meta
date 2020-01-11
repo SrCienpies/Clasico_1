@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: eaed2dc6fbb1b49419edfd8919e8fea2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Plantilla Iconos_0
+    21300002: Plantilla Iconos_1
+    21300004: Plantilla Iconos_2
+    21300006: Plantilla Iconos_3
+    21300008: Plantilla Iconos_4
+    21300010: Plantilla Iconos_5
+    21300012: Plantilla Iconos_6
+    21300014: Plantilla Iconos_7
+    21300016: Plantilla Iconos_8
+    21300018: Plantilla Iconos_9
+    21300020: Plantilla Iconos_10
+    21300022: Plantilla Iconos_11
+    21300024: Plantilla Iconos_12
+    21300026: Plantilla Iconos_13
+    21300028: Plantilla Iconos_14
+    21300030: Plantilla Iconos_15
+    21300032: Plantilla Iconos_16
+    21300034: Plantilla Iconos_17
+    21300036: Plantilla Iconos_18
+    21300038: Plantilla Iconos_19
+    21300040: Plantilla Iconos_20
+    21300042: Plantilla Iconos_21
+    21300044: Plantilla Iconos_22
+    21300046: Plantilla Iconos_23
+    21300048: Plantilla Iconos_24
+    21300050: Plantilla Iconos_25
+    21300052: Plantilla Iconos_26
+    21300054: Plantilla Iconos_27
+    21300056: Plantilla Iconos_28
+    21300058: Plantilla Iconos_29
+    21300060: Plantilla Iconos_30
+    21300062: Plantilla Iconos_31
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plantilla Iconos_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 937.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265e87f5b3a06c947bf6adcc1f790943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 937.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e2914045dfc2b45a19ab73d0a744f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_2
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 937.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4299035e7cf694749b8554321ac97982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_3
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 937.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe2305551249cd429747f39252f84a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_4
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 937.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e94dee576d0ad4bb697973b1c9378f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_5
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 937.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92b169959b5a8f48b6ea5fe54d4ed13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_6
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 937.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6dc072e0fa52c46a743f56a61b97a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_7
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 937.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a423ea97f2df5114f8890b7a444ce5cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 625.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5cd53ba421d5943a4be4498d808a2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_9
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 625.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335a3b9905791c64690c6384964c7ceb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 625.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8d57cc36cab2e42b4d9233fae1dd42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_11
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 625.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec952e1c952e2494a81520b218984da9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_12
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 625.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682f8c4c790e35045b155b9ae99c05dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_13
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 625.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6930f9c21d595547bc31dc70edfb91c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_14
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 625.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84566d406fd5e5428755d561f45e819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_15
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 625.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41fd766f2dd1a3468b0dd08ad79c925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 313.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9b21d8bde59c343a7aaa345f7c4eb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_17
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 313.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72b4a59d4b53274bb57aa9d4a05f04b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_18
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 313.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d238034b167af548bac7e0aca25582c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_19
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 313.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54e6dfcaa9fd534fb2ebc58c80e639e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_20
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 313.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1703adc698b672145bf94a0e4c4c3cbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_21
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 313.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574a63e4fb3c7894b87e99497fb4ed32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_22
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 313.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d446ae61a10454a90571e2c3194a4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_23
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 313.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9044cc96a484349aea0b18a8dfa8cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca52b0faaff4074eb631feaed679ca7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_25
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af30d2c9da141034698f52eaff3f21a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_26
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df16be985e7f324ebb69c40128ac621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_27
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917d7e4799a9d90458f80aa39997ba92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_28
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e7f2069ddd21141a9939f96ed6ed57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_29
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076deeda4648bae429427951a7f8f4bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_30
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c4dc15535466a4fae9ae2c4f9e2f05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plantilla Iconos_31
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1.5
+        width: 312.5
+        height: 312.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a9b3c05db9a1348890afe900110793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c3581a4ef3df7a647a5d83557c416ebe
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
