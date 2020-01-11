@@ -29,7 +29,7 @@ public class PlayerControlador : MonoBehaviour
     [HideInInspector] public Transform sueloCheck;
     [HideInInspector] public LayerMask sueloCapa;
 
-    private Rigidbody2D rbd2;
+    public Rigidbody2D rbd2;
     private bool saltando;
     private bool enSuelo;
 
@@ -44,7 +44,6 @@ public class PlayerControlador : MonoBehaviour
 
     void Start()
     {
-        Display();
     }
 
     void Update()
@@ -121,7 +120,7 @@ public class PlayerControlador : MonoBehaviour
                 if (!puedeMorir) puedeMorir = true;
                 else
                 {
-                    Debug.Log("Muere");
+                    GameOver();
                 }
             }
 
@@ -161,16 +160,25 @@ public class PlayerControlador : MonoBehaviour
         MenuManager.instance.Cambio_Menu("Menu Juego");
         estado = "EnJuego";
 
-        transform.GetChild(0).transform.rotation =  Quaternion.Euler(Vector3.zero);
+        SetPlayer();
+       
+    }
 
+    public void SetPlayer()
+    {
+        rbd2 = GetComponent<Rigidbody2D>();
+
+        puedeMorir = false;
+
+        transform.GetChild(0).transform.rotation = Quaternion.Euler(Vector3.zero);
 
         transform.GetChild(0).gameObject.SetActive(true);
         transform.GetChild(1).gameObject.SetActive(true);
         rbd2.bodyType = RigidbodyType2D.Dynamic;
 
         transform.position = pos_inicial;
-
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         switch (collision.gameObject.tag)

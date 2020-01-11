@@ -44,7 +44,8 @@ public class MenuManager : MonoBehaviour
     [HideInInspector] public Color color_inactivo;
 
 
-    private int grupo_nivel;
+    private int grupo_index;
+    private int nivel_index;
     #endregion
 
     public Image pantalla_carga;
@@ -123,6 +124,8 @@ public class MenuManager : MonoBehaviour
 
         contenedor_general.transform.GetChild(1).GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
 
+
+        contenedor_general.gameObject.SetActive(false);
     }
 
     public void GenerarMenu()
@@ -373,7 +376,7 @@ public class MenuManager : MonoBehaviour
 
     public void Cambio_Grupo_Nivel(string direccion)
     {
-        int grupo_anterior = grupo_nivel;
+        int grupo_anterior = grupo_index;
 
         switch (direccion)
         {
@@ -385,11 +388,7 @@ public class MenuManager : MonoBehaviour
                 contenedor_niveles.GetChild(0).GetComponent<RectTransform>().DOAnchorPos(new Vector2(-2000, contenedor_niveles.GetChild(0).transform.position.y), 0.25f);
                 contenedor_niveles.GetChild(1).GetComponent<RectTransform>().DOAnchorPos(Vector2.zero, 0.25f).OnComplete(DesactivarGrupoNivel);
 
-                grupo_nivel++;
-
-
-
-
+                grupo_index++;
                 break;
 
             case "Anterior":
@@ -400,7 +399,7 @@ public class MenuManager : MonoBehaviour
                 contenedor_niveles.GetChild(0).GetComponent<RectTransform>().DOAnchorPos(new Vector2(2000, 0), 0.25f);
                 contenedor_niveles.GetChild(1).GetComponent<RectTransform>().DOAnchorPos(Vector2.zero, 0.25f).OnComplete(DesactivarGrupoNivel);
 
-                grupo_nivel--;
+                grupo_index--;
 
                 break;
 
@@ -415,8 +414,8 @@ public class MenuManager : MonoBehaviour
         contenedor_index.GetChild(grupo_anterior).GetComponent<Image>().DOColor(color_inactivo, 0.25f);
 
 
-        contenedor_index.GetChild(grupo_nivel).GetComponent<RectTransform>().DOScale(Vector3.one * 1.3f, 0.25f);
-        contenedor_index.GetChild(grupo_nivel).GetComponent<Image>().DOColor(color_activo, 0.25f);
+        contenedor_index.GetChild(grupo_index).GetComponent<RectTransform>().DOScale(Vector3.one * 1.3f, 0.25f);
+        contenedor_index.GetChild(grupo_index).GetComponent<Image>().DOColor(color_activo, 0.25f);
 
         btn_direccion[0].gameObject.SetActive(false);
         btn_direccion[1].gameObject.SetActive(false);
@@ -430,10 +429,10 @@ public class MenuManager : MonoBehaviour
         btn_direccion[0].gameObject.SetActive(true);
         btn_direccion[1].gameObject.SetActive(true);
 
-        if(grupo_nivel == 0) btn_direccion[0].gameObject.SetActive(false);
-        if(grupo_nivel == 4) btn_direccion[1].gameObject.SetActive(false);
+        if(grupo_index == 0) btn_direccion[0].gameObject.SetActive(false);
+        if(grupo_index == 4) btn_direccion[1].gameObject.SetActive(false);
 
-        contenedor_index.GetChild(grupo_nivel).localScale = Vector3.one * 1.5f;
+        contenedor_index.GetChild(grupo_index).localScale = Vector3.one * 1.5f;
     }
 
     void OpcionesNivel()
@@ -443,9 +442,9 @@ public class MenuManager : MonoBehaviour
             cantidad_pixels.Add(new int());
         }
 
-        grupo_nivel = 0;
+        grupo_index = 0;
         btn_direccion[0].gameObject.SetActive(false);
-        contenedor_index.GetChild(grupo_nivel).localScale = Vector3.one * 1.5f;
+        contenedor_index.GetChild(grupo_index).localScale = Vector3.one * 1.5f;
 
         for (int i = 0; i < contenedor_niveles.childCount; i++)
         {
@@ -466,11 +465,12 @@ public class MenuManager : MonoBehaviour
         {
             BtnNivel features = grupo.GetChild(i).GetComponent<BtnNivel>();
 
-            features.color.color = color_nivel[grupo_nivel];
+            features.color.color = color_nivel[grupo_index];
             features.txt_index.text = (i + 1).ToString();
             features.index = i;
-            features.boton.onClick.AddListener(delegate { Carga("Menu Juego",5,4); });
-            
+            features.boton.onClick.AddListener(delegate { Carga("Menu Juego"); });
+            features.boton.onClick.AddListener(delegate { Carga_Nivel(grupo_index,features.index); });
+
 
             switch (features.estado)
             {
@@ -518,17 +518,18 @@ public class MenuManager : MonoBehaviour
 
    //======================================================================================================
 
-    void Carga(string estado_juego,int mn_actual,int mn_anterior)
+    public void Carga(string estado_juego)
     {
-        //estado = estado_juego;
-
-        //menu_Actual = mn_actual;
-        //menu_anterior = mn_anterior;
-
         pantalla_carga.gameObject.SetActive(true);
         pantalla_carga.DOFade(1, 0.25f).OnComplete(()=> Pantalla_Carga(estado_juego));
     }
     
+    void Carga_Nivel(int grupo_, int nivel_)
+    {
+        grupo_index = grupo_;
+        nivel_index = nivel_;
+    }
+
     void Pantalla_Carga(string paso)
     {
         switch (paso)
@@ -537,6 +538,9 @@ public class MenuManager : MonoBehaviour
 
                 lista_menu[4].gameObject.SetActive(false);
                 lista_menu[5].gameObject.SetActive(true);
+                lista_menu[6].gameObject.SetActive(false);
+
+                contenedores_bloques.gameObject.SetActive(true);
 
                 cargando = true;
                 StartCoroutine("GenerarNivel");
@@ -547,8 +551,15 @@ public class MenuManager : MonoBehaviour
 
             case "Menu Niveles":
 
-                lista_menu[4].gameObject.SetActive(false);
-                lista_menu[5].gameObject.SetActive(true);
+                lista_menu[4].anchoredPosition = Vector3.zero;
+
+                lista_menu[4].gameObject.SetActive(true);
+                lista_menu[5].gameObject.SetActive(false);
+                lista_menu[6].gameObject.SetActive(false);
+
+                contenedores_bloques.gameObject.SetActive(false);
+
+                estado = "Menu Niveles";
 
                 FadeIn();
                 break;
@@ -569,6 +580,13 @@ public class MenuManager : MonoBehaviour
 
     IEnumerator GenerarNivel()
     {
+        mapa = Resources.Load<Texture2D>("Nivel/Grupo_" + (grupo_index+1) + "/Nivel_" + nivel_index);
+
+        for (int i = 0; i < cantidad_pixels.Count; i++)
+        {
+            cantidad_pixels[i] = 0;
+        }
+
         while (cargando)
         {
 
@@ -588,6 +606,7 @@ public class MenuManager : MonoBehaviour
 
             player.GetComponent<PlayerControlador>().estado = "EnJuego";
             player.GetComponent<PlayerControlador>().pos_inicial = player.position;
+            player.GetComponent<PlayerControlador>().SetPlayer();
 
             ControladorData.instance.camara.gameObject.transform.position = player.transform.position + cam_offset;
             ControladorData.instance.camara.target = player;
