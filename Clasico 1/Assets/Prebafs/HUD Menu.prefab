@@ -4528,7 +4528,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7735587689056385120}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1786645801567223699}
+        m_MethodName: Carga
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu Niveles
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &5930823354153601690
@@ -10654,7 +10665,7 @@ MonoBehaviour:
   color_activo: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
   color_inactivo: {r: 0.7019608, g: 0.7019608, b: 0.7019608, a: 1}
   pantalla_carga: {fileID: 1618828725725702459}
-  mapa: {fileID: 2800000, guid: 1a6ecddd72fa1eb4f9b36e7619227c76, type: 3}
+  contenedores_bloques: {fileID: 0}
 --- !u!1 &7147085117565526883
 GameObject:
   m_ObjectHideFlags: 0
