@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Espina
   - Estrella
+  - Bloque
   layers:
   - Default
   - TransparentFX

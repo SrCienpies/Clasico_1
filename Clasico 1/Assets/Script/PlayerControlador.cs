@@ -5,11 +5,15 @@ using DG.Tweening;
 
 public class PlayerControlador : MonoBehaviour
 {
+    private float AngleDir(Vector2 A, Vector2 B)
+    {
+        return -A.x * B.y + A.y * B.x;
+    }
 
 
 
     [Header("General")]
-    [HideInInspector] public string estado = "EnJuego";
+    public string estado = "EnJuego";
     public Transform pelota;
     public Transform par_explocion;
     [HideInInspector] public Vector2 pos_inicial;
@@ -21,7 +25,7 @@ public class PlayerControlador : MonoBehaviour
 
 
     [Header("Salto")]
-    [Range (0,10)]
+    [Range (0,20)]
     public float velocidadSalto = 10;
     [HideInInspector] public float fallMultiplier = 2.5f;
     [HideInInspector] public float lowJumpMultiplier = 2.0f;
@@ -115,7 +119,7 @@ public class PlayerControlador : MonoBehaviour
         if (corriendo)
         {
 
-            if(rbd2.velocity.magnitude <= 0)
+            /*if(rbd2.velocity.magnitude <= 0)
             {
                 if (!puedeMorir) puedeMorir = true;
                 else
@@ -123,7 +127,7 @@ public class PlayerControlador : MonoBehaviour
                     GameOver();
                     return;
                 }
-            }
+            }*/
 
             rbd2.velocity = new Vector2(velocidadHorizontal * Time.deltaTime, rbd2.velocity.y);
             //Debug.Log(rbd2.velocity.magnitude);
@@ -140,7 +144,7 @@ public class PlayerControlador : MonoBehaviour
 
     void GameOver()
     {
-        MenuManager.instance.Cambio_Menu("Menu GameOver");
+        //MenuManager.instance.Cambio_Menu("Menu GameOver");
 
         estado = "GameOver";
 
@@ -158,15 +162,13 @@ public class PlayerControlador : MonoBehaviour
 
     public void Restart()
     {
-        MenuManager.instance.Cambio_Menu("Menu Juego");
+        //MenuManager.instance.Cambio_Menu("Menu Juego");
         estado = "EnJuego";
-
-        // MenuManager.instance.contenedores_bloques.GetChild(3).
-
-        for (int i = 0; i < MenuManager.instance.contenedores_bloques.GetChild(3).childCount; i++)
+        
+        /*for (int i = 0; i < MenuManager.instance.contenedores_bloques.GetChild(3).childCount; i++)
         {
             MenuManager.instance.contenedores_bloques.GetChild(3).GetChild(i).gameObject.SetActive(true);
-        }
+        }*/
 
 
         SetPlayer();
@@ -196,6 +198,24 @@ public class PlayerControlador : MonoBehaviour
             case "Espina":
 
                 GameOver();
+
+                break;
+
+            case "Bloque":
+
+                float direccion =  AngleDir(collision.transform.position, transform.position);
+                Debug.Log(direccion);
+
+                float angulo = Vector2.Angle(collision.transform.up, collision.transform.position - transform.position);
+                angulo -= 90;
+                Mathf.Abs(angulo);
+
+                
+
+                if (angulo < 60 && direccion < 0) 
+                {
+                    GameOver();
+                }
 
                 break;
 

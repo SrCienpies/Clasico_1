@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7454630198941644215}
   m_Layer: 0
   m_Name: fondo
-  m_TagString: Untagged
+  m_TagString: Espina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

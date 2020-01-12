@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Color 5
   m_EditorClassIdentifier: 
   color: {r: 0, g: 0, b: 0, a: 0}
-  bloquePrefab: {fileID: 0}
+  bloquePrefab: {fileID: 5865950611594362794, guid: eb89948f4b17c2540b0a3efaab1a601f,
+    type: 3}

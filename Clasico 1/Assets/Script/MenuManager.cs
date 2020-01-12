@@ -110,13 +110,8 @@ public class MenuManager : MonoBehaviour
         for (int m = 0; m < colorMappings.Length; m++)
         {
             GameObject contenedor_individual = new GameObject("contenedor bloque " + m);
-            //GameObject bloque = new GameObject("Bloque " + m);
 
             contenedor_individual.transform.SetParent(contenedor_general.transform);
-
-
-            //bloque.transform.SetParent(contenedor_individual.transform);
-            //bloque.gameObject.SetActive(false);
         }
 
         contenedor_general.transform.GetChild(1).gameObject.layer = LayerMask.NameToLayer("Suelo");
@@ -544,7 +539,8 @@ public class MenuManager : MonoBehaviour
                 contenedores_bloques.gameObject.SetActive(true);
 
                 cargando = true;
-                StartCoroutine("GenerarNivel");
+                //StartCoroutine("GenerarNivel");
+                GenerarNivel();
 
                 Cambio_Menu(paso);
 
@@ -579,7 +575,7 @@ public class MenuManager : MonoBehaviour
         contenedores_bloques.GetChild(0).GetChild(0).GetComponent<PlayerControlador>().Restart();
     }
 
-    IEnumerator GenerarNivel()
+    void GenerarNivel()
     {
         mapa = Resources.Load<Texture2D>("Nivel/Grupo_" + (grupo_index+1) + "/Nivel_" + nivel_index);
 
@@ -587,9 +583,6 @@ public class MenuManager : MonoBehaviour
         {
             cantidad_pixels[i] = 0;
         }
-
-        while (cargando)
-        {
 
             for (int x = 0; x < mapa.width; x++)
             {
@@ -612,9 +605,6 @@ public class MenuManager : MonoBehaviour
             ControladorData.instance.camara.gameObject.transform.position = player.transform.position + cam_offset;
             ControladorData.instance.camara.target = player;
 
-            yield return null;
-        }
-
 
         FadeIn();
     }
@@ -623,7 +613,7 @@ public class MenuManager : MonoBehaviour
     {
         Color pixelColor = mapa.GetPixel(x, y);
 
-        mapa.GetPixel(x, y);
+        //mapa.GetPixel(x, y);
 
         if (pixelColor.a == 0)
         {
