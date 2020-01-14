@@ -582,7 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c023b8b089619e459aaa62b2dc2ab05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  png_mapa: {fileID: 2800000, guid: fc2ba653883f18d449300b3b0790226e, type: 3}
+  png_mapa: {fileID: 2800000, guid: 96cb7598134efdf44829b68d027db38c, type: 3}
   levelText: {fileID: 1379791108}
   loadingBar: {fileID: 658015014}
   loadingTxt: {fileID: 660052396}
