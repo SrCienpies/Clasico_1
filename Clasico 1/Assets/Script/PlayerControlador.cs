@@ -5,55 +5,50 @@ using DG.Tweening;
 
 public class PlayerControlador : MonoBehaviour
 {
+    private float AngleDir(Vector2 A, Vector2 B)
+    {
+        return -A.x * B.y + A.y * B.x;
+    }
 
-    #region VARIABLES GENERALES
+
+
     [Header("General")]
     public string estado = "EnJuego";
     public Transform pelota;
     public Transform par_explocion;
     [HideInInspector] public Vector2 pos_inicial;
 
-    private int direccion = 1;
 
-    #endregion
-
-
-    #region VARIABLES ROTACION
     [Header("Rotacion")]
     public float velocidadRotacion;
-    #endregion
+    //private bool rotando;
 
-    #region VARIABLES SALTO
+
     [Header("Salto")]
+    [Range (0,20)]
     public float velocidadSalto = 10;
-
-    public float saltoHorizontal;
-    public float saltoVertical;
-
-    private float dash = 1;
-
     [HideInInspector] public float fallMultiplier = 2.5f;
     [HideInInspector] public float lowJumpMultiplier = 2.0f;
 
     [HideInInspector] public Transform sueloCheck;
     [HideInInspector] public LayerMask sueloCapa;
 
-    [HideInInspector] public Rigidbody2D rbd2;
+    public Rigidbody2D rbd2;
     private bool saltando;
     private bool enSuelo;
-    private bool dashing;
-
-    #endregion
 
 
-    #region VARIABLES CORRER
     [Header("Corriendo")]
     public float velocidadHorizontal = 10;
-
     private bool corriendo = false;
-    private bool puedeMorir = false;
-    #endregion
 
+    private bool puedeMorir = false;
+
+
+
+    void Start()
+    {
+    }
 
     void Update()
     {
@@ -123,7 +118,20 @@ public class PlayerControlador : MonoBehaviour
 
         if (corriendo)
         {
-            rbd2.velocity = new Vector2(direccion*velocidadHorizontal * Time.deltaTime*dash, rbd2.velocity.y);
+
+            /*if(rbd2.velocity.magnitude <= 0)
+            {
+                if (!puedeMorir) puedeMorir = true;
+                else
+                {
+                    GameOver();
+                    return;
+                }
+            }*/
+
+            rbd2.velocity = new Vector2(velocidadHorizontal * Time.deltaTime, rbd2.velocity.y);
+            //Debug.Log(rbd2.velocity.magnitude);
+
         }
     }
 
@@ -195,6 +203,19 @@ public class PlayerControlador : MonoBehaviour
 
             case "Bloque":
 
+                float direccion =  AngleDir(collision.transform.position, transform.position);
+                Debug.Log(direccion);
+
+                float angulo = Vector2.Angle(collision.transform.up, collision.transform.position - transform.position);
+                angulo -= 90;
+                Mathf.Abs(angulo);
+
+                
+
+                if (angulo < 60 && direccion < 0) 
+                {
+                    GameOver();
+                }
 
                 break;
 
@@ -214,84 +235,12 @@ public class PlayerControlador : MonoBehaviour
         {
             case "Estrella":
 
-               // Debug.Log("Coge estrella");
+                Debug.Log("Coge estrella");
 
                 break;
 
             default:
                 break;
         }
-        
     }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer == 9)
-        {
-            //Debug.Log("Item");
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                switch (collision.tag)
-                {
-                    case "Item_1":
-                        
-                        SaltoDoble();
-
-                        break;
-
-                    case "Item_2":
-
-                        SaltoAlto();
-
-                        break;
-
-                    case "Item_3":
-
-                        SaltoLargo();
-
-                        break;
-
-
-
-
-                    default:
-                        break;
-                }
-
-                collision.GetComponent<Item>().Desvanecer();
-            }
-
-        }
-    }
-
-
-    public void SaltoDoble()
-    {
-        rbd2.velocity = Vector2.zero;
-        SaltoNormal();
-
-    }
-
-    public void SaltoAlto()
-    {
-        rbd2.velocity = Vector2.zero;
-        rbd2.velocity = Vector2.up * velocidadSalto * 2f;
-    }
-
-    public void SaltoLargo()
-    {
-        if (!dashing)
-        {
-            rbd2.velocity = Vector2.zero;
-
-            SaltoNormal();
-
-            dashing = true;
-            dash = saltoHorizontal;
-
-            DOTween.To(() => dash, x => dash = x, 1, 1.5f).OnComplete(() => { dashing = false; dash = 1; });
-        }
-    }
-
 }
