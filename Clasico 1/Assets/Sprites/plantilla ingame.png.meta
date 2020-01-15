@@ -7,17 +7,6 @@ TextureImporter:
     21300004: plantilla ingame_2
     21300006: plantilla ingame_3
     21300008: plantilla ingame_4
-    21300010: plantilla ingame_5
-    21300012: plantilla ingame_6
-    21300014: plantilla ingame_7
-    21300016: plantilla ingame_8
-    21300018: plantilla ingame_9
-    21300020: plantilla ingame_10
-    21300022: plantilla ingame_11
-    21300024: plantilla ingame_12
-    21300026: plantilla ingame_13
-    21300028: plantilla ingame_14
-    21300030: plantilla ingame_15
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -136,7 +125,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbf288fb2db09ae459070fcd1fcd058f
+      spriteID: d57cb1d49a7d3794484a802c758174f6
       vertices: []
       indices: 
       edges: []
@@ -156,7 +145,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5fa732415c13b64c95c958c25837ea1
+      spriteID: c67ffea0597c378439e21d50fb1bd6d8
       vertices: []
       indices: 
       edges: []
@@ -176,7 +165,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 029169bc3802e3849b6b472838a75e1a
+      spriteID: 872c33a47f78a64459b3617175daf040
       vertices: []
       indices: 
       edges: []
@@ -185,8 +174,8 @@ TextureImporter:
       name: plantilla ingame_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 400
+        x: 0
+        y: 300
         width: 100
         height: 100
       alignment: 0
@@ -196,7 +185,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4ed0814f01956e409bfd7451be04f3c
+      spriteID: 3d11920746346474bb9189263e4b6d82
       vertices: []
       indices: 
       edges: []
@@ -205,46 +194,6 @@ TextureImporter:
       name: plantilla ingame_4
       rect:
         serializedVersion: 2
-        x: 400
-        y: 400
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b767ed32cadf87046b2cb73e13eeeec5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 300
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33e8f515a8eff0648b1a9c4137fa0778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_6
-      rect:
-        serializedVersion: 2
         x: 100
         y: 300
         width: 100
@@ -256,187 +205,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cc2f3b7be3274540a7e6a23642b3d89
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_7
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 300
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f20d927e3cab6d408e0c821c3a2a5bf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_8
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 300
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1594cb3814bb6c94eb6d7aef9ed2fdbe
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_9
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 300
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 662b4875d1fdca741b8dc8056c23978a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 200
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a3e06fe8321106418ed98f55b4276ab
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_11
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 200
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 909c400943d25374b8bd61b722bfc41c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_12
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 200
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bed4d64d8b40f6e4c9137c35be7d5fb1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_13
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 200
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fca7735b2cbe3d64aaffda063e4a5611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_14
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 200
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 308516ffc8c490c4bab3c926d5efa299
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plantilla ingame_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 100
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f32f9b2a6a8f2ba40b47de891e696be2
+      spriteID: f67cb7f522669d2449a2cb7c60c2ec10
       vertices: []
       indices: 
       edges: []
