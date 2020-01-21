@@ -9,14 +9,14 @@ public class LevelCreator : MonoBehaviour
     private ControladorCamara camara;
     private PlayerControlador player;
 
-    public UnityEngine.UI.Text levelText;
-    public UnityEngine.UI.Image loadingBar;
-    public UnityEngine.UI.Text loadingTxt;
-    public UnityEngine.UI.Button loadingButton;
-    public UnityEngine.UI.Button updateButton;
-    public UnityEngine.UI.Button previewButton;
-    public UnityEngine.UI.Button restartButton;
-    public UnityEngine.UI.Button exitButton;
+    [HideInInspector] public UnityEngine.UI.Text levelText;
+    [HideInInspector] public UnityEngine.UI.Image loadingBar;
+    [HideInInspector] public UnityEngine.UI.Text loadingTxt;
+    [HideInInspector] public UnityEngine.UI.Button loadingButton;
+    [HideInInspector] public UnityEngine.UI.Button updateButton;
+    [HideInInspector] public UnityEngine.UI.Button previewButton;
+    [HideInInspector] public UnityEngine.UI.Button restartButton;
+    [HideInInspector] public UnityEngine.UI.Button exitButton;
 
     private float total_pixels;
     private float current_pixels;
@@ -25,6 +25,15 @@ public class LevelCreator : MonoBehaviour
 
     private ColorPrefab[] colores;
     private List<SingleGroup> grupoData = new List<SingleGroup>();
+
+   /* [Header("Limite Horizonral")]
+    public float min_X;
+    public float max_X;
+
+
+    [Header("Limite Vertical")]
+    public float min_Y;
+    public float max_Y;*/
 
 
     void Start()
@@ -78,6 +87,11 @@ public class LevelCreator : MonoBehaviour
         player = contenedores_bloques.GetChild(0).GetChild(0).GetComponent<PlayerControlador>();
 
         //camara.target = player.transform;
+
+       /* camara.min_X = min_X;
+        camara.max_X = max_X;
+        camara.min_Y = min_Y;
+        camara.max_Y = max_Y;*/
 
         player.pos_inicial = grupoData[0].posicion[0];
         player.SetPlayer();
@@ -252,4 +266,5 @@ public class SingleGroup
 {
     public int total_bloques;
     public List<Vector2> posicion = new List<Vector2>();
+
 }
