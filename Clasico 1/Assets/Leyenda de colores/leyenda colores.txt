@@ -1,0 +1,8 @@
+Mgoneda: B100FF
+Estrella: FFEC00
+Pinchos: FF0000
+Bloque:000000
+Player: 5EFF00
+Item Salto Largo: #FFBA00
+Item Doble Salto: #00FFF9
+Item Salto Alto: #FF00D0
