@@ -249,8 +249,8 @@ MonoBehaviour:
   pos_inicial: {x: 0, y: 0}
   velocidadRotacion: 0.3
   velocidadSalto: 9
-  saltoHorizontal: 3
   saltoVertical: 0
+  saltoHorizontal: 3
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
   sueloCheck: {fileID: 6358861517708574541}
