@@ -26,9 +26,9 @@ public class PlayerControlador : MonoBehaviour
     #region VARIABLES SALTO
     [Header("Salto")]
     public float velocidadSalto = 10;
-
-    public float saltoHorizontal;
     public float saltoVertical;
+    public float saltoHorizontal;
+
 
     private float dash = 1;
 
@@ -228,7 +228,6 @@ public class PlayerControlador : MonoBehaviour
     {
         if (collision.gameObject.layer == 9)
         {
-            //Debug.Log("Item");
 
             if (Input.GetMouseButtonDown(0))
             {
@@ -251,9 +250,6 @@ public class PlayerControlador : MonoBehaviour
                         SaltoLargo();
 
                         break;
-
-
-
 
                     default:
                         break;
