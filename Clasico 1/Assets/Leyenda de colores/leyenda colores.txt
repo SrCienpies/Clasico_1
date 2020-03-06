@@ -1,8 +1,8 @@
 Mgoneda: B100FF
 Estrella: FFEC00
-Pinchos: FF0000
-Bloque:000000
-Player: 5EFF00
-Item Salto Largo: #FFBA00
-Item Doble Salto: #00FFF9
-Item Salto Alto: #FF00D0
+Pinchos: FF0000 (rojo)
+Bloque:000000 (negro)
+Player: 5EFF00 (verde)
+Item Salto Largo: #FFBA00 (amarillo)
+Item Doble Salto: #00FFF9 (Cian)
+Item Salto Alto: #FF00D0 (Magenta)

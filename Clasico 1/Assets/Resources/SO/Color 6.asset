@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d798db2318230d148b3aaf86e57f240b, type: 3}
   m_Name: Color 6
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.7307692, b: 0, a: 1}
+  color: {r: 1, g: 0.7294118, b: 0, a: 1}
   bloquePrefab: {fileID: 5865950611594362794, guid: 8855690d042f5b745903f930424d9820,
     type: 3}
